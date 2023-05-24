@@ -33,3 +33,39 @@ body{
 .navbar-dark {
      background-color: #512DA8;
 }
+#reserveTable{
+    margin: 10px 0px;
+  }
+  
+  .card-header{
+    background-color:orange;
+    color: white;
+    font-size: xx-large;
+  }
+  .card-body{
+    margin: 15px 0px;
+  }
+
+  .radio-inline{
+    padding:10px;
+  }
+  
+  .modal-header{
+    background-color: #512DA8;
+    color: white;
+  }
+  .tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.label1{
+  padding-right: inherit;
+}
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
