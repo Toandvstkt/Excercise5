@@ -58,10 +58,12 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col align-self-center">
-                    <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="tooltip" data-html="true"
-                        title="Or Call us at  <br><strong>+852 12345678</strong>" data-placement="bottom"
-                        href="#reserveform">Reserve Table</a>
-
+                    <a style="font-size:15px;font-weight: bold;" role="button" 
+                    class="btn btn-sm btn-warning btn-block" 
+                    data-toggle="modal"
+                    data-target="#reserveModal">
+                        Reserve Table
+                    </a>
                 </div>
             </div>
         </div>
@@ -196,61 +198,80 @@
             </div>
 
         </div>
-        <div id="reserveTable">
-            <div class="card col-12 offset-sm-2 col-sm-8 align-self-center">
-                <div class="row card-header">
-                    Reserve a Table
-                </div>
-                <div class="card-body">
-                    <div class="form-group">
-                        <div class="input-group row container">
-                            <div class="col-12 col-sm-2">
-                                <span class="text" id="">Number of Guests</span>
-                            </div>
-                            <div class="col-12 col-sm-7">
-                                <label class="radio-inline label1"><input type="radio" name="optradio"> 1</label>
-                                <label class="radio-inline label1"><input type="radio" name="optradio"> 2</label>
-                                <label class="radio-inline label1"><input type="radio" name="optradio"> 3</label>
-                                <label class="radio-inline label1"><input type="radio" name="optradio"> 4</label>
-                                <label class="radio-inline label1"><input type="radio" name="optradio"> 5</label>
-                                <label class="radio-inline label1"><input type="radio" name="optradio"> 6</label>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="container ">
-                            <!-- Form date-time -->
-                            <div class='input-group date row'>
-                                <div class="col-12 col-sm-2">
-                                    <span class="text" id="">Date and Time</span>
+
+        <!-- Bảng -->
+        <div class="modal fade" id="reserveModal" tabindex="-1" role="dialog" aria-labelledby="reserveModalLabel" aria-hidden="true">
+             <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Reserve a Table </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <div class="input-group container row">
+                                <div class="col-12 col-sm-3">
+                                  <span class="text" id="">Number of Guests</span>
+                                </div>
+                                <div class="col-12 col-sm-9">
+                                  <label class="radio-inline label1"><input type="radio" name="optradio"> 1</label>
+                                  <label class="radio-inline label1"><input type="radio" name="optradio"> 2</label>
+                                  <label class="radio-inline label1"><input type="radio" name="optradio"> 3</label>
+                                  <label class="radio-inline label1"><input type="radio" name="optradio"> 4</label>
+                                  <label class="radio-inline label1"><input type="radio" name="optradio"> 5</label>
+                                  <label class="radio-inline label1"><input type="radio" name="optradio"> 6</label>
+                                </div>
+                              </div> 
+                              <br>
+
+                              <!-- Smoking -->
+                            <div class="input-group row container">
+                                <div class="col-auto col-12 col-sm-3">
+                                    <span class="" id="">Section </span>
+                                </div>
+                                <div class="btn-group col-12 col-sm-7" data-toggle="buttons">
+                                    <label class="btn btn-primary active" style="background-color:green;">
+                                        <input type="radio" name="options" id="optionNonSmoking" autocomplete="off"> Non-Smoking
+                                    </label>
+                                    <label class="btn btn-danger">
+                                        <input type="radio" name="options" id="optionSmoking" autocomplete="off"> Smoking
+                                    </label>
+                                </div>
+                            </div> 
+                            <div class='input-group date row container'>
+                                <div class="col-auto col-12 col-sm-3">
+                                  <span class="text" id="">Date and Time</span>
                                 </div>
                                 <div class="col-12 col-sm-8">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="input-group">
-                                                <input type='text' class="form-control" placeholder="Date" />
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-group">
-                                                <input type='text' class="form-control" placeholder="Time" />
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <br>
+                                  <div class="row">
                                     <div class="col-lg-6">
-                                        <a href="#" class="btn btn-primary"> Reserve </a>
+                                      <div class="input-group">
+                                        <input type='text' class="form-control" placeholder="Date" />
+                                      </div>
                                     </div>
-                                </div>
-                            </div>
-                            <!-- End date-time -->
+                                    <div class="col-lg-6">
+                                      <div class="input-group">
+                                        <input type='text' class="form-control" placeholder="Time" />
+                                      </div>
+                                    </div>
+                  
+                                  </div> 
                         </div>
-                    </div>
-
-
-                </div> <!-- Card Body -->
-            </div>
+                    </div> 
+                </div> 
+                <div class="modal-footer col-12 col-sm-8">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Reserve Table</button>
+                    
+                </div>
+            </div> 
         </div>
+    </div>
+  </div>                  
+        </div>        
     </div>
 
     <footer class="footer">

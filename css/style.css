@@ -42,6 +42,10 @@ body{
     color: white;
     font-size: xx-large;
   }
+  .card-header1{
+    color: white;
+    font-size: xx-large;
+  }
   .card-body{
     margin: 15px 0px;
   }
@@ -81,3 +85,19 @@ height: 300px;
   left: 0;
   min-height: 300px;
 }
+#carousel-button {
+  right: 0px;
+  position: absolute;
+  bottom: 0px; }
+.modal-header {
+  background-color: white;
+  color: black;
+font-weight: bold; }
+  .modal-header .close {
+    color: black; }
+    .modal-body {
+      background-color: white; }
+.modal-content{
+  width: 40rem;
+}
+ 
