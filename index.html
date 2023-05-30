@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link href="css/styles.css" rel="stylesheet">
+    
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -33,7 +34,7 @@
 
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="login-Btn" role="button">
                         <span class="fa fa-sign-in"></span> Login</a>
                 </span>
 
@@ -60,8 +61,7 @@
                 <div class="col align-self-center">
                     <a style="font-size:15px;font-weight: bold;" role="button" 
                     class="btn btn-sm btn-warning btn-block" 
-                    data-toggle="modal"
-                    data-target="#reserveModal">
+                    id="reserve-button">
                         Reserve Table
                     </a>
                 </div>
@@ -221,7 +221,7 @@
                                   <span class="text" id="">Number of Guests</span>
                                 </div>
                                 <div class="col-12 col-sm-9">
-                                  <label class="radio-inline label1"><input type="radio" name="optradio"> 1</label>
+                                  <label class="radio-inline label1"><input type="radio" name="optradio"> 1</label>    
                                   <label class="radio-inline label1"><input type="radio" name="optradio"> 2</label>
                                   <label class="radio-inline label1"><input type="radio" name="optradio"> 3</label>
                                   <label class="radio-inline label1"><input type="radio" name="optradio"> 4</label>
@@ -370,24 +370,5 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-    $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');                    
-                }
-});
-
-
-</script>
-
+<script src="js/scripts.js"></script>
 </html>
